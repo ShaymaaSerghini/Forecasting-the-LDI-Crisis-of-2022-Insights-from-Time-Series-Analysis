@@ -18,22 +18,6 @@ The analysis combines **conditional-mean forecasting, conditional-volatility mod
 
 ---
 
-### Key Results
-
-- By **27 September**, the actual 10-year gilt yield was approximately **88–89 bps above** the univariate no-crisis counterfactual.
-- The VAR produced a similar no-crisis gap of **86.22 bps**.
-- Pre-crisis volatility models expected only around **8–9 bps** of conditional volatility at the start of the crisis, while realised innovations reached approximately **25–38 bps**.
-- On **28 September**, the observed 10-year yield was approximately **38–40 bps below** the univariate no-BoE-intervention forecasts.
-- The VAR no-BoE counterfactual produced a gap of **−44.02 bps** on 28 September and **−57.38 bps** on 4 October.
-- More complicated conditional-mean models did **not materially outperform a Random Walk benchmark**.
-- VAR results suggest that short-run predictive relationships were considerably stronger **within the gilt yield curve** than between sterling and gilt yields.
-
-<p align="center">
-  <img src="assets/01_crisis_window.png" width="850">
-</p>
-
----
-
 # Conditional Mean Models
 
 The conditional-mean analysis compared:
@@ -58,9 +42,8 @@ The main result was that **model complexity provided almost no forecasting advan
 
 Rolling one-step forecasts were much more accurate because recent market information was continually incorporated. This showed that **updating the information set mattered considerably more than increasing model complexity**.
 
-<p align="center">
-  <img src="assets/02_level_and_changes.png" width="850">
-</p>
+<img width="1289" height="790" alt="02_level_and_changes" src="https://github.com/user-attachments/assets/49695b57-55d0-4edf-8aba-b66fcd5cf369" />
+
 
 ## No-Crisis Counterfactual
 
@@ -76,9 +59,8 @@ The actual 10-year yield reached:
 
 This produced an actual-minus-counterfactual gap of approximately **88–89 basis points by 27 September**.
 
-<p align="center">
-  <img src="assets/03_no_crisis_mean_counterfactual.png" width="850">
-</p>
+<img width="1289" height="890" alt="03_no_crisis_mean_counterfactual" src="https://github.com/user-attachments/assets/07563d17-425a-4441-9c16-8bd0e12f924e" />
+
 
 ## No-BoE-Intervention Counterfactual
 
@@ -92,9 +74,8 @@ The immediate model-based gap was therefore approximately:
 
 The forecasts became increasingly model-dependent at longer horizons, so the strongest result is concentrated around the immediate post-intervention period.
 
-<p align="center">
-  <img src="assets/04_no_boe_mean_counterfactual.png" width="850">
-</p>
+<img width="1389" height="689" alt="04_no_boe_mean_counterfactual" src="https://github.com/user-attachments/assets/143da7a4-ee5b-428b-acf8-101960a52ffc" />
+
 
 ---
 
@@ -141,9 +122,8 @@ Realised innovation magnitudes were substantially larger:
 
 The crisis therefore represented not only a large movement in the yield level but also an **extreme volatility shock relative to the pre-crisis state**.
 
-<p align="center">
-  <img src="assets/05_no_crisis_volatility.png" width="850">
-</p>
+<img width="1388" height="590" alt="05_no_crisis_volatility" src="https://github.com/user-attachments/assets/0cfc142d-1302-4139-8cc7-823971463a5c" />
+
 
 ## No-BoE Volatility Counterfactual
 
@@ -157,9 +137,8 @@ However, the realised innovation was approximately **38.83 bps**, leaving a mode
 
 The post-intervention period was not uniformly calm. Shocks around **10 October** and **13 October** again exceeded the volatility forecasts from every model.
 
-<p align="center">
-  <img src="assets/06_no_boe_volatility_gap.png" width="850">
-</p>
+<img width="1389" height="590" alt="06_no_boe_volatility_gap" src="https://github.com/user-attachments/assets/d7bce786-53c3-47dd-a207-63676b0a6787" />
+
 
 ---
 
@@ -216,9 +195,8 @@ At horizon 9, the FEVD attributed approximately:
 
 These FEVD values depend on the chosen Cholesky ordering and therefore should be interpreted as **descriptive rather than causal**.
 
-<p align="center">
-  <img src="assets/07_var_fevd.png" width="850">
-</p>
+<img width="998" height="1025" alt="07_var_fevd" src="https://github.com/user-attachments/assets/cdf072d4-d6f3-4ba4-b5a0-e5b5c353476a" />
+
 
 ## VAR Counterfactuals
 
@@ -243,9 +221,22 @@ Selected results:
 | 10 Oct | 4.5445% | 4.4777% | +6.68 bps |
 | 14 Oct | 4.3868% | 4.4805% | −9.37 bps |
 
-<p align="center">
-  <img src="assets/08_var_no_boe_counterfactual.png" width="850">
-</p>
+<img width="1289" height="590" alt="08_var_no_boe_counterfactual" src="https://github.com/user-attachments/assets/142d995f-13e5-46a7-b737-4e504803c7ac" />
+
+
+---
+### Key Results
+
+- By **27 September**, the actual 10-year gilt yield was approximately **88–89 bps above** the univariate no-crisis counterfactual.
+- The VAR produced a similar no-crisis gap of **86.22 bps**.
+- Pre-crisis volatility models expected only around **8–9 bps** of conditional volatility at the start of the crisis, while realised innovations reached approximately **25–38 bps**.
+- On **28 September**, the observed 10-year yield was approximately **38–40 bps below** the univariate no-BoE-intervention forecasts.
+- The VAR no-BoE counterfactual produced a gap of **−44.02 bps** on 28 September and **−57.38 bps** on 4 October.
+- More complicated conditional-mean models did **not materially outperform a Random Walk benchmark**.
+- VAR results suggest that short-run predictive relationships were considerably stronger **within the gilt yield curve** than between sterling and gilt yields.
+
+<img width="1189" height="490" alt="01_crisis_window" src="https://github.com/user-attachments/assets/a15aee5b-bf41-4180-a858-d345c960a5d3" />
+
 
 ---
 
