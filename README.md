@@ -318,4 +318,4 @@ These models would only be considered improvements if they outperform the existi
 
 ### Master's Thesis
 
-This project was developed from my **Master's thesis, _Forecasting the LDI Crisis of 2022: Insights from Time Series Analysis_**, completed at the **School of Mathematical Sciences 2025, Queen Mary University of London**.
+This project is from my **Master's thesis, _Forecasting the LDI Crisis of 2022: Insights from Time Series Analysis_**, completed at the **School of Mathematical Sciences 2025, Queen Mary University of London**.
