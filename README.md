@@ -244,7 +244,7 @@ Selected results:
 
 Three results were particularly consistent across the project.
 
-### 1. The mini-budget period was far outside the pre-crisis statistical baseline
+#### 1. The mini-budget period was far outside the pre-crisis statistical baseline
 
 By 27 September, the actual 10-year yield was around **86–89 basis points above** the paths predicted using only pre-crisis information.
 
@@ -252,7 +252,7 @@ By 27 September, the actual 10-year yield was around **86–89 basis points abov
 
 ARCH/GARCH-family models expected only around **8–9 bps** of volatility at the beginning of the crisis, while realised innovations reached approximately **25–38 bps**.
 
-### 3. The observed yield immediately after the BoE intervention was materially below the no-intervention baseline
+#### 3. The observed yield immediately after the BoE intervention was materially below the no-intervention baseline
 
 On 28 September:
 
@@ -265,7 +265,7 @@ The project does **not** claim that these differences were caused solely by the 
 
 ---
 
-# Applying What I Learned
+### Applying What I Learned
 
 The main lesson from this project was that successful time-series modelling is not simply about choosing the most sophisticated model.
 
@@ -289,7 +289,7 @@ The project gave me a broader workflow that is directly transferable to quantita
 
 ---
 
-# Natural Extensions
+### Natural Extensions
 
 A natural extension would be to introduce economically relevant exogenous variables using **ARIMAX**.
 
@@ -316,10 +316,6 @@ These models would only be considered improvements if they outperform the existi
 
 ---
 
-# Master's Thesis
+### Master's Thesis
 
-This project was developed from my **Master's thesis, _Forecasting the LDI Crisis of 2022: Insights from Time Series Analysis_**, completed at the **School of Mathematical Sciences, Queen Mary University of London**.
-
-The project was subsequently extended in Python to include a more rigorous time-series workflow covering:
-
-**conditional-mean forecasting → conditional-volatility modelling → multivariate VAR analysis → fixed-origin counterfactual forecasting.**
+This project was developed from my **Master's thesis, _Forecasting the LDI Crisis of 2022: Insights from Time Series Analysis_**, completed at the **School of Mathematical Sciences 2025, Queen Mary University of London**.
