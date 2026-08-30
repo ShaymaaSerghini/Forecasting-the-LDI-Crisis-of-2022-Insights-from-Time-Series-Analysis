@@ -12,13 +12,13 @@ The analysis combines **conditional-mean forecasting, conditional-volatility mod
 1. **No-crisis baseline** — information frozen on 22 September.
 2. **No-BoE-intervention baseline** — information frozen on 27 September.
 
-> The counterfactual gaps are model-based statistical comparisons, not causal estimates.
+The counterfactual gaps are model-based statistical comparisons, not causal estimates.
 
 **Tools:** Python · pandas · NumPy · statsmodels · ARCH · matplotlib
 
 ---
 
-# Conditional Mean Models
+### Conditional Mean Models
 
 The conditional-mean analysis compared:
 
@@ -45,7 +45,7 @@ Rolling one-step forecasts were much more accurate because recent market informa
 <img width="1289" height="790" alt="02_level_and_changes" src="https://github.com/user-attachments/assets/49695b57-55d0-4edf-8aba-b66fcd5cf369" />
 
 
-## No-Crisis Counterfactual
+#### No-Crisis Counterfactual
 
 The models were refitted using all available observations through **22 September 2022** and then forecast forward without receiving crisis-period observations.
 
@@ -62,7 +62,7 @@ This produced an actual-minus-counterfactual gap of approximately **88–89 basi
 <img width="1289" height="890" alt="03_no_crisis_mean_counterfactual" src="https://github.com/user-attachments/assets/07563d17-425a-4441-9c16-8bd0e12f924e" />
 
 
-## No-BoE-Intervention Counterfactual
+#### No-BoE-Intervention Counterfactual
 
 The models were next refitted through **27 September**, allowing them to observe the crisis but not the Bank of England intervention period.
 
@@ -79,7 +79,7 @@ The forecasts became increasingly model-dependent at longer horizons, so the str
 
 ---
 
-# Conditional Volatility Models
+### Conditional Volatility Models
 
 The residuals from the conditional-mean models showed strong evidence of **volatility clustering**.
 
@@ -107,7 +107,7 @@ All models used **Student-t innovations** to account for heavy-tailed residuals.
 
 ARCH, GARCH and GJR-GARCH produced cleaner residual diagnostics, so the full set of models was retained for robustness.
 
-## Crisis Volatility Shock
+#### Crisis Volatility Shock
 
 Using information available through **22 September**, the models predicted only approximately **7.6–8.9 bps** of conditional volatility at the beginning of the crisis.
 
@@ -125,7 +125,7 @@ The crisis therefore represented not only a large movement in the yield level bu
 <img width="1388" height="590" alt="05_no_crisis_volatility" src="https://github.com/user-attachments/assets/0cfc142d-1302-4139-8cc7-823971463a5c" />
 
 
-## No-BoE Volatility Counterfactual
+#### No-BoE Volatility Counterfactual
 
 After refitting through **27 September**, the volatility models correctly recognised that the market was already stressed.
 
@@ -142,7 +142,7 @@ The post-intervention period was not uniformly calm. Shocks around **10 October*
 
 ---
 
-# Vector Autoregression
+### Vector Autoregression
 
 A multivariate VAR was used to study relationships between:
 
@@ -153,7 +153,7 @@ A multivariate VAR was used to study relationships between:
 
 AIC selected **VAR(3)**.
 
-## Forecast Performance
+#### Forecast Performance
 
 | Validation | MAE | RMSE |
 |---|---:|---:|
@@ -164,7 +164,7 @@ Like the univariate models, the VAR performed substantially better when continuo
 
 However, adding more variables did **not materially improve long-horizon forecasting accuracy**.
 
-## Granger Predictability
+#### Granger Predictability
 
 The strongest predictive relationships were within the gilt curve.
 
@@ -175,18 +175,18 @@ The strongest predictive relationships were within the gilt curve.
 
 This suggests that short-run 10-year yield dynamics were more closely linked to movements elsewhere on the gilt curve than to sterling movements.
 
-## Impulse Responses and FEVD
+#### Impulse Responses and FEVD
 
 Reduced-form impulse responses also showed stronger interactions among the **5-, 10- and 20-year gilt yields**.
 
 At horizon 9, the FEVD attributed approximately:
 
-### Sterling
+##### Sterling
 
 - Own shock: **99.3%**
 - Other variables combined: less than 1%
 
-### 10-Year Yield
+##### 10-Year Yield
 
 - 5-year shock: **86.9%**
 - Own shock: **8.5%**
@@ -198,7 +198,7 @@ These FEVD values depend on the chosen Cholesky ordering and therefore should be
 <img width="998" height="1025" alt="07_var_fevd" src="https://github.com/user-attachments/assets/cdf072d4-d6f3-4ba4-b5a0-e5b5c353476a" />
 
 
-## VAR Counterfactuals
+#### VAR Counterfactuals
 
 The VAR no-crisis counterfactual produced a 10-year yield of approximately **3.5719% on 27 September**, compared with the actual **4.4341%**.
 
@@ -240,7 +240,7 @@ Selected results:
 
 ---
 
-# Summary
+### Summary
 
 Three results were particularly consistent across the project.
 
