@@ -1,0 +1,2 @@
+series,regression,statistic,p_value,base_lag,break_index,estimated_break_date,critical_1pct,critical_5pct,critical_10pct,decision_5pct
+10Y yield level,ct,-4.106037816046469,0.43364385880572565,0,2013,2021-12-15,-5.57556,-5.07332,-4.82668,Fail to reject unit-root null

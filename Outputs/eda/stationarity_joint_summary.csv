@@ -1,0 +1,3 @@
+series,ADF_p_value,KPSS_p_value,joint_5pct_interpretation
+10Y yield level,0.9129992605916891,0.01,Evidence consistent with non-stationarity
+Daily yield change (bps),0.0,0.020213085742193392,Mixed / inconclusive evidence

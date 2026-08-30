@@ -1,0 +1,5 @@
+series,test,regression,statistic,p_value,lags,n_obs,critical_1pct,critical_5pct,critical_10pct,decision_5pct
+10Y yield level,ADF,c,-0.38238073445945636,0.9129992605916891,0,2778,-3.432706138505929,-2.8625809752722913,-2.567324143685784,Fail to reject unit-root null
+10Y yield level,KPSS,c,2.806201938109751,0.01,31,2779,0.739,0.463,0.347,Reject stationarity null
+Daily yield change (bps),ADF,c,-52.7872788647652,0.0,0,2777,-3.43270698773957,-2.862581350327331,-2.5673243433645037,Reject unit-root null
+Daily yield change (bps),KPSS,c,0.6266560568358727,0.020213085742193392,2,2778,0.739,0.463,0.347,Reject stationarity null

@@ -1,0 +1,9 @@
+{
+  "best_lag_aic": 3,
+  "variables": [
+    "fx_return_pct",
+    "d5y_bps",
+    "d10y_bps",
+    "d20y_bps"
+  ]
+}
